@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voter Registration Form - Urbiztondo, Pangasinan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <h2>Voter Registration Form - Urbiztondo, Pangasinan</h2>
+  <form>
+    <label for="applicationType">Application Type:</label>
+    <select id="applicationType" name="applicationType">
+      <option value="registration">New Registration</option>
+      <option value="transfer">Transfer</option>
+      <option value="reactivation">Reactivation</option>
+      <option value="change">Change of Name/Correction</option>
+      <option value="inclusion">Inclusion/Reinstatement</option>
+    </select>
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Last, First, Middle" required />
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <label for="address">Residence Address:</label>
+    <textarea id="address" name="address" rows="3" placeholder="House No., Street, Barangay, Municipality, Province" required></textarea>
+
+    <label for="sex">Sex:</label>
+    <select id="sex" name="sex">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <label for="contact">Contact Number:</label>
+    <input type="tel" id="contact" name="contact" />
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" />
+
+    <label for="civilstatus">Civil Status:</label>
+    <select id="civilstatus" name="civilstatus">
+      <option value="single">Single</option>
+      <option value="married">Married</option>
+      <option value="widow">Widow/Widower</option>
+      <option value="separated">Legally Separated</option>
+    </select>
+
+    <label for="disability">Do you have any disability?</label>
+    <select id="disability" name="disability">
+      <option value="none">None</option>
+      <option value="visual">Visual</option>
+      <option value="hearing">Hearing</option>
+      <option value="physical">Physical</option>
+      <option value="mental">Mental</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="profession">Profession/Occupation:</label>
+    <input type="text" id="profession" name="profession" />
+
+    <label for="consent">Consent to Data Processing:</label>
+    <select id="consent" name="consent" required>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
